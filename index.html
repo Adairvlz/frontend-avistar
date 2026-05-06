@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVISTAR Hospedajes</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header class="hero">
+        <nav>
+            <h1>AVISTAR</h1>
+            <button id="exportCsvBtn">Exportar CSV</button>
+        </nav>
+
+        <section>
+            <h2>Hospedajes únicos para tu próxima estadía</h2>
+            <p>Explora casas, apartamentos y villas disponibles.</p>
+        </section>
+    </header>
+
+    <main class="container">
+        <section class="controls">
+            <input type="text" id="searchInput" placeholder="Buscar por nombre..." />
+
+            <select id="sortSelect">
+                <option value="id">Más recientes</option>
+                <option value="name">Nombre</option>
+                <option value="price_per_night">Precio</option>
+                <option value="capacity">Capacidad</option>
+            </select>
+
+            <select id="orderSelect">
+                <option value="asc">Ascendente</option>
+                <option value="desc">Descendente</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>Hospedajes disponibles</h2>
+            <div id="seriesContainer" class="grid"></div>
+        </section>
+
+        <section class="form-section">
+            <h2>Agregar hospedaje</h2>
+
+            <form id="seriesForm">
+                <input type="hidden" id="seriesId" />
+
+                <input id="name" placeholder="Nombre" required />
+                <input id="location" placeholder="Ubicación" required />
+                <textarea id="description" placeholder="Descripción" required></textarea>
+                <input id="price" type="number" placeholder="Precio por noche" required />
+                <input id="capacity" type="number" placeholder="Capacidad" required />
+                <input id="imageUrl" placeholder="URL de imagen" />
+
+                <label class="checkbox">
+                    <input id="available" type="checkbox" checked />
+                    Disponible
+                </label>
+
+                <button type="submit">Guardar hospedaje</button>
+                <button type="button" id="cancelEditBtn" class="secondary hidden">Cancelar edición</button>
+            </form>
+        </section>
+
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
