@@ -158,18 +158,14 @@ La exportación CSV fue implementada manualmente usando JavaScript vanilla y `Bl
 
 ## Frontend funcionando
 
-Agregar screenshot aquí.
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/06ba203c-3988-4cad-b940-ece2d07eb945" />
 
-## CRUD funcionando
-
-Agregar screenshot aquí.
-
-## Ratings funcionando
-
-Agregar screenshot aquí.
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/dacbd0c5-8001-42d3-a4e3-88acb260fe25" />
 
 ---
 
 # Reflexión personal
 
-Escribir reflexión personal aquí.
+Usar HTML puro y java vanilla fue un poco complicado porque habia que estar tirando y recompiniendo el contenedor para ver los cambios y algo que no  me gusto es que en la mitad del codigo de java tenia que devolver html lo cual lo hace un poco confuso mezclar los dos.
+
+Creo que no lo volveria a usar a menos que sea necesario pero por eso existen tecnologias como REACT que ayudan mucho a la hora de la reutilizacion de componentes y que los compomentes  sean  reactivos para poder ver los cambios de manera local del proyecto
