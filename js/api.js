@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8010";
+const API_URL = "https://backend-avistar-production.up.railway.app";
 
 async function getSeries({ q = "", sort = "id", order = "asc" } = {}) {
     const url = `${API_URL}/series/?q=${q}&sort=${sort}&order=${order}&limit=100`;
